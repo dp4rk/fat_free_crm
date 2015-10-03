@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930035219) do
+ActiveRecord::Schema.define(version: 20150930221945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -311,6 +311,7 @@ ActiveRecord::Schema.define(version: 20150930035219) do
     t.datetime "updated_at"
     t.string   "background_info"
     t.text     "subscribed_users"
+    t.integer  "futon"
   end
 
   add_index "opportunities", ["assigned_to"], name: "index_opportunities_on_assigned_to", using: :btree
